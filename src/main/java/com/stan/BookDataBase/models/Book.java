@@ -1,4 +1,4 @@
-package com.stan.moviesdb.models;
+package com.stan.BookDataBase.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;

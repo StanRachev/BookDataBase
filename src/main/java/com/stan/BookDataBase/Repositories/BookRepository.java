@@ -1,6 +1,6 @@
-package com.stan.moviesdb.Repositories;
+package com.stan.BookDataBase.Repositories;
 
-import com.stan.moviesdb.models.Book;
+import com.stan.BookDataBase.models.Book;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,7 +1,7 @@
-package com.stan.moviesdb.Services;
+package com.stan.BookDataBase.Services;
 
-import com.stan.moviesdb.Repositories.BookRepository;
-import com.stan.moviesdb.models.Book;
+import com.stan.BookDataBase.Repositories.BookRepository;
+import com.stan.BookDataBase.models.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,11 +15,7 @@ public class BookService {
     private BookRepository bookRepository;
 
     public List<Book> getByKeyword(String keyword) {
-        if (keyword != null) {
-            return bookRepository.search(keyword);
-        }
-
-        return bookRepository.findAll();
+        return bookRepository.search(keyword);
     }
 
     public Iterable<Book> getAll() {
